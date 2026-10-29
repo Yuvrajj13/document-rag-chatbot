@@ -1,5 +1,7 @@
 # 📚 RAG Chatbot
 
+**Live Demo:** https://document-rag-chatbot-j9hzaor5d697wwd3gkqbuc.streamlit.app/
+
 A Retrieval-Augmented Generation (RAG) chatbot that lets you upload any PDF and ask questions about it. Built from scratch using ChromaDB, Sentence Transformers, and Groq LLM.
 
 ## 🚀 Overview
@@ -9,12 +11,12 @@ An interactive Document AI assistant that allows users to upload any PDF documen
 - **PDF Ingestion**: Upload text-based PDF documents
 - **Context-Grounded QA**: Responses strictly grounded in the document content
 - **Source Citations**: Displays page numbers and chunk previews for every answer
-- **Multi-turn Chat**: Retains context across questions within the session
+- **Chat Interface**: Keeps the conversation history visible within the session
 
 ## 🛠️ Tech Stack
 - **Embeddings** — Sentence Transformers (`all-MiniLM-L6-v2`)
 - **Vector Store** — ChromaDB (in-memory, cosine similarity)
-- **LLM** — Groq API (`llama-3.3-70b-versatile`)
+- **LLM** — Groq API (openai/gpt-oss-120b)
 - **UI** — Streamlit
 - **PDF Parsing** — PyMuPDF (`fitz`)
 
@@ -45,7 +47,7 @@ streamlit run app.py
 ```
 
 ## 📁 Project Structure
-rag-chatbot/
+document-rag-chatbot/
 ├── app.py              # Streamlit UI
 ├── rag.py              # Core RAG logic
 ├── requirements.txt
